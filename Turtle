@@ -1,0 +1,38 @@
+import turtle
+
+# Create a turtle object
+my_turtle = turtle.Turtle()
+
+# Set the turtle's shape and color
+my_turtle.shape('turtle')
+my_turtle.color('green')
+
+# Move the turtle forward and turn it right
+my_turtle.forward(100)
+my_turtle.right(90)
+
+# Move the turtle forward again and turn it left
+my_turtle.forward(100)
+my_turtle.left(90)
+
+# Move the turtle backward and turn it left
+my_turtle.backward(100)
+my_turtle.left(90)
+
+# Move the turtle backward again and turn it right
+my_turtle.backward(100)
+my_turtle.right(90)
+
+# Move the turtle to a new location and set a new color
+my_turtle.penup()
+my_turtle.goto(50, 50)
+my_turtle.pendown()
+my_turtle.color('blue')
+
+# Draw a square
+for i in range(4):
+    my_turtle.forward(50)
+    my_turtle.left(90)
+
+# Exit the turtle program
+turtle.done()
